@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Stick+No+Bills:wght@400;700&display=swap');
+
+html {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+    font-family: 'Dm sans', arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 150%;
+    width: 1200px;
+    min-height: 300px;
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Stick No Bills', arial, sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 80%;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Dm sans', arial, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    min-height: 100px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul a {
+    padding: 0 20px;
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbutton {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 32px 24px 24px 24px;
+    margin-top: 16px;
+    text-align: left;
+    background-color: black;
+    box-shadow: 0px 4px 24px rgba(91, 66, 0, 0.15);
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+    transition-duration: 2s;
+}
+
+.dropdown .navbutton {
+    width: 300px;
+    padding-bottom: 16px;
+}
+
+.dropdown .navbutton a {
+    color: white;
+}
+
+.dropdown .navbutton a:hover {
+    color: #E0B400;
+}
+
+main {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding-top: 0em;
+    padding-bottom: 5em;
+}
+
+#main2 {
+    min-height: 300px;
+    display: inline-block;
+    padding-top: 5em;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4em;
+    color: black;
+    text-align: center;
+}
+
+.cards i {
+    font-size: 3rem;
+    color: black;
+}
+
+.card1 {
+    /* background-image: url(assets/robert-bye-tG36rvCeqng-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate; */
+    color: black;
+    border: black solid 1px;
+    min-height: 250px;
+    width: 30%;
+}
+
+/* .card1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: black;
+    opacity: 0.7;
+} */
+
+.card2 {
+    /* background-image: url(assets/pexels-adrien-olichon-2817452.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    isolation: isolate; */
+    color: black;
+    border: black solid 1px;
+    min-height: 250px;
+    width: 30%;
+}
+
+/* .card2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: black;
+    opacity: 0.7;
+} */
+
+.card3 {
+    /* background-image: url(assets/taylor-smith-GNSIOmiBFaY-unsplash.jpg);
+    background-size: cover;
+    background-position: top; */
+    color: black;
+    border: black solid 1px;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card1, .card2, .card3 {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.herobox1 {
+    flex: 1;
+    padding-right: 10%;
+    align-items: flex-start;
+}
+
+.herobox2 {
+    flex: 1;
+}
+
+.herobox2 img {
+    width: 110%;
+}
+
+.cards p {
+    font-size: 1rem;
+    line-height: 150%;
+    margin-top: 10px;
+}
+
+.cards h2 {
+    margin-top: 20px;
+}
+
+.slickButton {
+    background-color: black;
+    color: white;
+    padding: 16px 24px;
+    display: inline-block;
+    margin-top: 32px;
+}
+
+.slickButton:hover {
+    box-shadow: -12px 12px 0px #E0B400;
+    background-color: #1f1f1f;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+blockquote {
+    width: 48%;
+    padding: 50px;
+    border: 1px black solid;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+blockquote img {
+    border-radius: 100px;
+    border: 2px black solid;
+    width: 60px;
+    margin-bottom: 16px;
+}
+
+.quotee {
+    font-weight: bold;
+}
+
+/* blockquote :last-child {
+    font-size: 1rem;
+    font-weight: bold;
+} */
+
+blockquote p:last-of-type {
+    font-size: 1rem;
+    font-weight: bold;
+}
